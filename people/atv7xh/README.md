@@ -1,6 +1,6 @@
 # Dylan Dietrich
 
-![Path to an image](Headshot.jpg)
+![Path to an image](Headshot.JPG)
 
 - Hometown: Zurich, Switzerland
 - Hobbies: Golf, Tennis and Poker
