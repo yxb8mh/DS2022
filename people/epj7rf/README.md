@@ -2,7 +2,7 @@
 
 ![Path to an image](<photo of Ian.jpeg>))
 
-- Hometown: Seattle, WA
+- Hometown: Seattle, Washington
 
 - Hobbies: Piano, Guitar, Drawing, Reading and Working Out
 
