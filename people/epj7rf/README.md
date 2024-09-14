@@ -1,6 +1,6 @@
 # Ian Kariuki
 
-![Path to an image](<photo of Ian.jpeg>))
+![Path to an image](<photo of Ian.jpeg>)
 
 - Hometown: Seattle, Washington
 
