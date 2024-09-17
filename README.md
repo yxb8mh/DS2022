@@ -54,4 +54,4 @@ This will pull all upstream changes in and merge them with your fork.
 1. Find the "Sync Fork" button on the main page of your fork in GitHub.
 2. Within the drop-down menu, click on "Update Branch" to incorporate all upstream changes.
 
-![Sync Fork with Upstream]()
+![Sync Fork with Upstream](https://s3.amazonaws.com/ds2002-resources/images/sync-fork-upstream.png)
