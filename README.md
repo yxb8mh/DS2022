@@ -29,7 +29,7 @@ To stay current with new releases into the course repository, follow these steps
 
 1. Add an upstream source
 ```
-git remote add upstream [git@github.com:nmagee/ds2002-course.git](https://github.com/uvasds-systems/ds2002-course.git)
+git remote add upstream https://github.com/uvasds-systems/ds2002-course.git
 ```
 2. Fetch from the upstream branch:
 ```
