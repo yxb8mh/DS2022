@@ -23,6 +23,13 @@ Please read and complete all setup instructions found [here](SETUP.md).
 
 Once you have forked this repository, you have two options for keeping your fork current with new changes added to the original repository:
 
+### Update your fork with the GitHub UI
+
+1. Find the "Sync Fork" button on the main page of your fork in GitHub.
+2. Within the drop-down menu, click on "Update Branch" to incorporate all upstream changes.
+
+![Sync Fork with Upstream](https://s3.amazonaws.com/ds2002-resources/images/sync-fork-upstream.png)
+
 ### Update your fork with the CLI
 
 To stay current with new releases into the course repository, follow these steps:
@@ -48,10 +55,3 @@ git merge upstream/main main
 ```
 
 This will pull all upstream changes in and merge them with your fork. Note that the first line is a one-time configuration, whereas lines 2 and 3 can be used repeatedly to catch up with the upstream source.
-
-### Update your fork with the GitHub UI
-
-1. Find the "Sync Fork" button on the main page of your fork in GitHub.
-2. Within the drop-down menu, click on "Update Branch" to incorporate all upstream changes.
-
-![Sync Fork with Upstream](https://s3.amazonaws.com/ds2002-resources/images/sync-fork-upstream.png)
