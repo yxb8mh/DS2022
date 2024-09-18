@@ -1,7 +1,6 @@
 # Lab 3: Scripting
 
-Follow the steps below for practice with writing scripts. There are three scripts you will develop in this lab - two in `bash` and one in `python3`. Commit both to your forked copy of the course repository, and paste both GitHub URLs into the answer for submission.
-
+Follow the steps below for practice with writing scripts. There are three scripts you will develop in this lab - two in `bash` and one in `python3`. Commit all three to your forked copy of the course repository, and paste the containing folder's GitHub URL into Canvas for submission.
 
 ## 1. Write a `bash` Mad-Lib
 
