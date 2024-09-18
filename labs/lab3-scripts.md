@@ -59,7 +59,9 @@ This multi-step `bash` script should retrieve a tar compressed archive from a re
 
 6. Next, add a line of code to count how many lines of data remain in the data file. Remember that Row 1 contains headers, so it should not be counted. Another line should echo that value to the screen.
 
-7. Finally, create a new tarball named `converted-archive.tar.gz` containing the cleaned CSV file.
+7. Finally, the script should create a new tarball named `converted-archive.tar.gz` containing the cleaned CSV file.
+
+8. Use `chmod` to make your script executable, and run it. Make sure no errors occur.
 
 
 ## 3. Use Python to fetch remote data
@@ -136,6 +138,9 @@ pip install requests
     Take a moment to `print(r)` and view all the results. You can also do this by opening the fully-formatted URL above in a web browser. Note the variety of data available around your work in GitHub. 
 
     Much more information on the [**GitHub API is available**](https://docs.github.com/en/rest?apiVersion=2022-11-28). 
+
+7. Use `chmod` to make your script executable, and run it. Make sure no errors occur.
+   
 
 ## Submit your work
 
