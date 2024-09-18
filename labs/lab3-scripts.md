@@ -1,4 +1,4 @@
-# Lab 3: Scripting
+# Lab 3: Basic Scripting
 
 Follow the steps below for practice with writing scripts. There are three scripts you will develop in this lab - two in `bash` and one in `python3`. Commit all three to your forked copy of the course repository, and paste the containing folder's GitHub URL into Canvas for submission.
 
