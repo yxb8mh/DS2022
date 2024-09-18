@@ -131,8 +131,8 @@ pip install requests
     r = json.loads(requests.get(url).text)
 
     for x in r[:5]:
-    event = x['type'] + ' :: ' + x['repo']['name']
-    print(event)
+      event = x['type'] + ' :: ' + x['repo']['name']
+      print(event)
     ```
 
     Take a moment to `print(r)` and view all the results. You can also do this by opening the fully-formatted URL above in a web browser. Note the variety of data available around your work in GitHub. 
