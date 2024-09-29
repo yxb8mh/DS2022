@@ -1,37 +1,25 @@
-import boto3
-import requests
+#!/bin/bash
 
-def main():
-    bucket_name = 'ds2022-yxb8mh'
+# Usage: ./script.sh <bucket-name>
 
-    file_url = 'https://i.giphy.com/3og0Izv3p7vMprq2Qw.webp'
+# Check if bucket name is provided
+if [ -z "$1" ]; then
+  echo "Usage: $0 <bucket-name>"
+  exit 1
+fi
 
-    expires_in = 604800
+FILE_URL="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/University_of_Virginia_Rotunda_2006.jpg/800px-University_of_Virginia_Rotunda_2006.jpg"
+FILE_NAME="800px-University_of_Virginia_Rotunda_2006.jpg"
+BUCKET_NAME="$1"
+EXPIRATION=604800  
+echo "Downloading the file..."
+curl -O "$FILE_URL"
 
-    s3_object_name = file_url.split('/')[-1]
+echo "Uploading the file to S3..."
+aws s3 cp "$FILE_NAME" "s3://$BUCKET_NAME/"
 
-    local_filename = s3_object_name
+echo "Generating a presigned URL..."
+PRESIGNED_URL=$(aws s3 presign "s3://$BUCKET_NAME/$FILE_NAME" --expires-in $EXPIRATION)
 
-    print(f'Downloading file from {file_url}...')
-    response = requests.get(file_url)
-    response.raise_for_status() 
-    with open(local_filename, 'wb') as f:
-        f.write(response.content)
-    print(f'File downloaded and saved as {local_filename}.')
-
-    print(f'Uploading {local_filename} to bucket {bucket_name}...')
-    s3 = boto3.client('s3', region_name='us-east-1')
-    s3.upload_file(local_filename, bucket_name, s3_object_name)
-    print('File uploaded to S3.')
-
-    print('Generating presigned URL...')
-    presigned_url = s3.generate_presigned_url(
-        'get_object',
-        Params={'Bucket': bucket_name, 'Key': s3_object_name},
-        ExpiresIn=expires_in
-    )
-
-    print('Presigned URL:', presigned_url)
-
-if __name__ == '__main__':
-    main()
+echo "Presigned URL (valid for 7 days):"
+echo "$PRESIGNED_URL"
